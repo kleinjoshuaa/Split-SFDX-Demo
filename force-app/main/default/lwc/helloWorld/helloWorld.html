@@ -1,0 +1,16 @@
+<template>
+<template lwc:if={treatmentNotLoaded}>
+    <lightning-card  title="HelloWorld" icon-name="custom:custom14" split-managed="true" >
+        <div class="slds-m-around_medium" >
+            <p></p>
+        </div>
+   </lightning-card>
+  </template>
+<template lwc:else>
+    <lightning-card title="HelloWorld" icon-name="custom:custom14" split-managed="true" >
+        <div class="slds-m-around_medium" >
+            <p>Treatment={treatment}</p>
+        </div>
+   </lightning-card>
+  </template>
+</template>
