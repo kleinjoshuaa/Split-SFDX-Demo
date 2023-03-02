@@ -2,7 +2,6 @@
 
 ![image](https://user-images.githubusercontent.com/1207274/222344939-253ad534-a77d-4228-86c4-1378029b4597.png)
 
-Demo showing how you can use Split in a SalesForce Lightning Web Component.
 
 Salesforce Lightning is Salesforce’s new, modern, and sleek UI. Lightning allows the use of Lightning Web Components (LWC) as a way of allowing developers to make Salesforce Components out of pure HTML, CSS, and JavaScript (JS). 
 
