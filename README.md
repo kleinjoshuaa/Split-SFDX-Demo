@@ -49,6 +49,9 @@ Add `https://*.split.io` and ensure that the `connect-src` directive is checked
 ## See the treatment displayed in Salesforce!
 ![image](https://user-images.githubusercontent.com/1207274/222344695-411b58a6-9be6-48a6-974f-798a41bcd03c.png)
 
+
+## Code Snippets
+
 The key part of this code is the `helloWorld.js` file that contains the logic to load the Split SDK
 
 ````javascript
