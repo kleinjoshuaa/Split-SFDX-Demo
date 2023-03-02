@@ -19,6 +19,10 @@ Add `https://*.split.io` and ensure that the `connect-src` directive is checked
 ## Link the SFDX code to an org using SFDX and the VSCode extension
 ![image](https://user-images.githubusercontent.com/1207274/222344577-5258d74c-bd0f-45e3-98ab-0fc1e33159ad.png)
 
+## Set your SDK key in the helloWorld.js file
+![image](https://user-images.githubusercontent.com/1207274/222346489-4bac6493-7033-4a1a-bae7-781d502f55f3.png)
+
+
 ##  Deploy by right clicking `default` in the VSCode tree
 ![image](https://user-images.githubusercontent.com/1207274/222344641-e0761765-5b3d-467e-9804-0363fdd38595.png)
 
