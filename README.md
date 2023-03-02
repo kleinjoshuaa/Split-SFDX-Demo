@@ -19,7 +19,7 @@ Add `https://*.split.io` and ensure that the `connect-src` directive is checked
 
 ![image](https://user-images.githubusercontent.com/1207274/222344394-eee6d2c4-f178-4b33-940c-f29625737eb4.png)
 
-## Link the SFDX code to an org using SFDX and the VSCode extension
+## Link the SFDX code to a Salesforce Org using SFDX and the VSCode extension
 ![image](https://user-images.githubusercontent.com/1207274/222344577-5258d74c-bd0f-45e3-98ab-0fc1e33159ad.png)
 
 
