@@ -13,7 +13,6 @@ export default class HelloWorld extends LightningElement {
    renderedCallback() {      
     loadScript(this, splitsdk).then(() => {
         // your code with calls to the JS library
-        const that=this;
         var factory = splitio({ 
             core: {
               authorizationKey: 'SDK_KEY', // your sdk key
@@ -25,12 +24,12 @@ export default class HelloWorld extends LightningElement {
           });
           // And get the client instance you'll use
           var client = factory.client();
-          client.on(client.Event.SDK_READY, function() {
+          client.on(client.Event.SDK_READY, ()=> {
             console.log('SDK_READY')
             let treatment = client.getTreatment("demo_split");
             console.log('treatment = '+treatment);
-            that.treatment=treatment;        
-            that.treatmentNotLoaded=false;
+            this.treatment=treatment;        
+            this.treatmentNotLoaded=false;
           });
 
     });
