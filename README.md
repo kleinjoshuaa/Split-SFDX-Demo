@@ -1,18 +1,26 @@
-# Salesforce DX Project: Next Steps
+# Split-SFDX-Demo
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+![image](https://user-images.githubusercontent.com/1207274/222344939-253ad534-a77d-4228-86c4-1378029b4597.png)
 
-## How Do You Plan to Deploy Your Changes?
+Demo showing how you can use Split in a SalesForce Lightning Web Component
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
 
-## Configure Your Salesforce DX Project
+There are a few steps that are required to make this happen. 
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Add the split sdk as a static resource. 
+![image](https://user-images.githubusercontent.com/1207274/222343021-c0e65655-d46f-4b86-8d1e-390f0ee049c1.png)
+You can download the minified version from split's CDN as linked on our [JS SDK Help page](https://help.split.io/hc/en-us/articles/360020448791-JavaScript-SDK). Once you have the minified SDK, upload it to Salesforce by clicking the 'new' button and uploading the file. Ensure that cache-control is set to public. 
 
-## Read All About It
+## Allow the split sdk endpoints as a trusted site. 
+![image](https://user-images.githubusercontent.com/1207274/222343608-c75e0c29-d34f-4490-8d09-15bd69967d88.png)
+Add `https://*.split.io` and ensure that the `connect-src` directive is checked
+![image](https://user-images.githubusercontent.com/1207274/222344394-eee6d2c4-f178-4b33-940c-f29625737eb4.png)
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Link the SFDX code to an org using SFDX and the VSCode extension
+![image](https://user-images.githubusercontent.com/1207274/222344577-5258d74c-bd0f-45e3-98ab-0fc1e33159ad.png)
+
+##  Deploy by right clicking `default` in the VSCode tree
+![image](https://user-images.githubusercontent.com/1207274/222344641-e0761765-5b3d-467e-9804-0363fdd38595.png)
+
+## See the treatment displayed in salesforce!
+![image](https://user-images.githubusercontent.com/1207274/222344695-411b58a6-9be6-48a6-974f-798a41bcd03c.png)
