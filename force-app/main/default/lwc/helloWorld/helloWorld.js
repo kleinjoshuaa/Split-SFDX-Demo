@@ -32,6 +32,14 @@ export default class HelloWorld extends LightningElement {
             this.treatmentNotLoaded=false;
           });
 
+
+          client.on(client.Event.SDK_UPDATE, ()=> {
+            console.log('SDK_UPDATE')
+            let treatment = client.getTreatment("demo_split");
+            console.log('treatment = '+treatment);
+            this.treatment=treatment;        
+          });
+
     });
 }
 }
