@@ -51,7 +51,9 @@ Add `https://*.split.io` and ensure that the `connect-src` directive is checked
 
 ## Code Snippets
 
-The key part of this code is the `helloWorld.js` file that contains the logic to load the Split SDK
+The key part of this code is the `helloWorld.js` file that contains the logic to load the Split SDK. 
+
+Additionally, a usage of the `SDK_UPDATE` event allows users to get an updated treatment when Split definitions are updated.
 
 ````javascript
 import { LightningElement, api } from 'lwc';
@@ -85,6 +87,13 @@ export default class HelloWorld extends LightningElement {
             console.log('treatment = '+treatment);
             this.treatment=treatment;        
             this.treatmentNotLoaded=false;
+          });
+
+          client.on(client.Event.SDK_UPDATE, ()=> {
+            console.log('SDK_UPDATE')
+            let treatment = client.getTreatment("demo_split");
+            console.log('treatment = '+treatment);
+            this.treatment=treatment;        
           });
     });
 }
