@@ -45,13 +45,13 @@ Add `https://*.split.io` and ensure that the `connect-src` directive is checked
 ![image](https://user-images.githubusercontent.com/1207274/222344641-e0761765-5b3d-467e-9804-0363fdd38595.png)
 
 ## Add The Lighting web component to your SF App
-In Visual Studio Code, open the Command Palette by pressing Ctrl+Shift+P (Windows) or Cmd+Shift+P (macOS).
-Type SFDX.
-Select SFDX: Open Default Org.
-This opens your Trailhead Playground in a separate browser.
-From the App Launcher (App Launcher), find and select Sales.
-Click Setup gear then select Edit Page.
-Drag the helloWorld Lightning web component from the Custom area of the Lightning Components list to the top of the Page Canvas. 
+1. In Visual Studio Code, open the Command Palette by pressing Ctrl+Shift+P (Windows) or Cmd+Shift+P (macOS).
+2. Type SFDX.
+3. Select SFDX: Open Default Org.
+4. This opens your Trailhead Playground in a separate browser.
+5. From the App Launcher (App Launcher), find and select Sales.
+6. Click Setup gear then select Edit Page.
+7. Drag the helloWorld Lightning web component from the Custom area of the Lightning Components list to the top of the Page Canvas. 
 ![image](https://user-images.githubusercontent.com/1207274/224148934-a81ba754-a05b-4d55-94c7-b25e6c291656.png)
 
 
