@@ -5,7 +5,7 @@
 
 Salesforce Lightning is Salesforce’s new, modern, and sleek UI. Lightning allows the use of Lightning Web Components (LWC) as a way of allowing developers to make Salesforce Components out of pure HTML, CSS, and JavaScript (JS). 
 
-Split can work in a lightning web component. You can use the SDK in JS in a LWC just like you would use on any other web page. Split's JavaScript SDK meets all the security requirements for the Lightning Locker so you do not have to worry about any security issues. 
+Split can work in a lightning web component. You can use the SDK in JS in a LWC just like you would use on any other web page. Split's JavaScript SDK meets all the security requirements for the Lightning Locker so you do not have to worry about any security issues. Completing this tutorial requires that you have the SFDC CLI, VSCode, and the SFDC Extensions for VSCode
 
 
 
