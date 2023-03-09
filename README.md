@@ -5,7 +5,9 @@
 
 Salesforce Lightning is Salesforce’s new, modern, and sleek UI. Lightning allows the use of Lightning Web Components (LWC) as a way of allowing developers to make Salesforce Components out of pure HTML, CSS, and JavaScript (JS). 
 
-Split can work in a lightning web component. You can use the SDK in JS in a LWC just like you would use on any other web page. Split's JavaScript SDK meets all the security requirements for the Lightning Locker so you do not have to worry about any security issues. Completing this tutorial requires that you have the SFDC CLI, VSCode, and the SFDC Extensions for VSCode
+Split can work in a lightning web component. You can use the SDK in JS in a LWC just like you would use on any other web page. Split's JavaScript SDK meets all the security requirements for the Lightning Locker so you do not have to worry about any security issues. 
+
+Completing this tutorial requires that you have the SFDC CLI, VSCode, and the SFDC Extensions for VSCode all installed.
 
 
 
@@ -29,7 +31,6 @@ Add `https://*.split.io` and ensure that the `connect-src` directive is checked
 ![image](https://user-images.githubusercontent.com/1207274/222344577-5258d74c-bd0f-45e3-98ab-0fc1e33159ad.png)
 
 
-
 ## Set your SDK key in the helloWorld.js file
 ![image](https://user-images.githubusercontent.com/1207274/222346489-4bac6493-7033-4a1a-bae7-781d502f55f3.png)
 
@@ -42,6 +43,17 @@ Add `https://*.split.io` and ensure that the `connect-src` directive is checked
 
 ##  Deploy by right clicking `default` in the VSCode tree
 ![image](https://user-images.githubusercontent.com/1207274/222344641-e0761765-5b3d-467e-9804-0363fdd38595.png)
+
+## Add The Lighting web component to your SF App
+In Visual Studio Code, open the Command Palette by pressing Ctrl+Shift+P (Windows) or Cmd+Shift+P (macOS).
+Type SFDX.
+Select SFDX: Open Default Org.
+This opens your Trailhead Playground in a separate browser.
+From the App Launcher (App Launcher), find and select Sales.
+Click Setup gear then select Edit Page.
+Drag the helloWorld Lightning web component from the Custom area of the Lightning Components list to the top of the Page Canvas. 
+![image](https://user-images.githubusercontent.com/1207274/224148934-a81ba754-a05b-4d55-94c7-b25e6c291656.png)
+
 
 
 
