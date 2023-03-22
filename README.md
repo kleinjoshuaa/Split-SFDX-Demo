@@ -140,12 +140,16 @@ Here we are using an `lwc:if` directive on the template to display or hide entir
 Similarly to lightning - the JavaScript library that we set up as a static resource can also be used by VisualForce components. This allows the usage of Split where you may not be able to use Lightning Web Components. 
 
 To do this, first go to the Developer Console when in setup mode
+
 ![image](https://user-images.githubusercontent.com/1207274/226906041-c81bba22-b70b-4f9a-a86e-2b3225527c3c.png)
 
 Then create a new VisualForce Page
+
 ![image](https://user-images.githubusercontent.com/1207274/226906920-43cbd305-de96-473c-8c73-7b2519b417ab.png)
 
-In that page, place the following code, being sure to replace the  `authorizationKey` with your own SDK Key.
+In that page, place the following code, being sure to replace the  `authorizationKey` with your own SDK Key. 
+
+Note that this uses the same `splitsdk` static resource as the Lightning Web Component example above.
 
 ````javascript
 <apex:page>
