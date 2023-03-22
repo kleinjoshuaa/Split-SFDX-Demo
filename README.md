@@ -184,7 +184,7 @@ var client = factory.client();
 </apex:page>
 ````
 
-Then, clicking Preview at the top left will show the final result of the Split treatment. 
+Then, clicking Preview at the top left of the Developer Console will show the final result of the Split treatment. 
 
 ![image](https://user-images.githubusercontent.com/1207274/226907521-50223340-fb7c-4ccb-9a34-e03fdbf8a0a9.png)
 
