@@ -134,3 +134,59 @@ It works with the helloworld.html below
 ````
 
 Here we are using an `lwc:if` directive on the template to display or hide entire templates. You could also do this with information from the treatment. This is a very powerful capability. 
+
+
+## Using in VisualForce
+Similarly to lightning - the JavaScript library that we set up as a static resource can also be used by VisualForce components. This allows the usage of Split where you may not be able to use Lightning Web Components. 
+
+To do this, first go to the Developer Console when in setup mode
+![image](https://user-images.githubusercontent.com/1207274/226906041-c81bba22-b70b-4f9a-a86e-2b3225527c3c.png)
+
+Then create a new VisualForce Page
+![image](https://user-images.githubusercontent.com/1207274/226906920-43cbd305-de96-473c-8c73-7b2519b417ab.png)
+
+In that page, place the following code, being sure to replace the  `authorizationKey` with your own SDK Key.
+
+````javascript
+<apex:page>
+    <!-- Add the static resource to page's <head> -->
+    <apex:includeScript value="{! $Resource.splitsdk }"/>
+    <!-- A short bit of Split SDK Code to test it's there -->
+    <script type="text/javascript">
+var factory = splitio({ 
+  core: {
+    authorizationKey: 'SDK_KEY',
+    // key represents your internal user id, or the account id that 
+    // the user belongs to. 
+    // This could also be a cookie you generate for anonymous users
+    key: 'key'
+  }
+});
+// And get the client instance you'll use
+var client = factory.client();
+    client.on(client.Event.SDK_READY, function() {
+  var treatment = client.getTreatment("aa_test");
+              const e = document.getElementById("message");
+  if (treatment == "on") {
+      // insert code here to show on treatment
+	e.innerText="It is On!"
+  } else if (treatment == "off") {
+      // insert code here to show off treatment
+      	e.innerText="It is Off!"
+  } else {
+      // insert your control treatment code here
+      e.innerText="Houston, we have a problem"
+  }
+});
+    </script>
+    <!-- Where the  message will appear -->
+    <h1 id="message"></h1>
+</apex:page>
+````
+
+Then, clicking Preview at the top left (![image](https://user-images.githubusercontent.com/1207274/226907361-be50aaaa-e79e-4c9d-9247-205fb9789304.png) will show the final result of the Split treatment. 
+
+![image](https://user-images.githubusercontent.com/1207274/226907521-50223340-fb7c-4ccb-9a34-e03fdbf8a0a9.png)
+
+)  will 
+  }
