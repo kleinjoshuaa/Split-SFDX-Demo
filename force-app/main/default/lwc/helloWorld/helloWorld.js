@@ -20,6 +20,9 @@ export default class HelloWorld extends LightningElement {
               // the user belongs to. 
               // This could also be a cookie you generate for anonymous users
               key: 'key'
+            }, 
+            storage: {
+              type: 'LOCALSTORAGE'
             }
           });
           // And get the client instance you'll use
