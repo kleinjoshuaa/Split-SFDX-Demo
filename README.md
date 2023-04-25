@@ -91,7 +91,7 @@ export default class HelloWorld extends LightningElement {
               key: 'key'
             }, 
             storage: {
-              type: 'LOCALSTORAGE' 
+              type: 'LOCALSTORAGE' // needed to handle storage. 
             }
           });
           // And get the client instance you'll use
