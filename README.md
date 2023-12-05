@@ -65,7 +65,7 @@ Add `https://*.split.io` and ensure that the `connect-src` directive is checked
 
 The key part of this code is the `helloWorld.js` file that contains the logic to load the Split SDK. 
 
-Additionally, a usage of the `SDK_UPDATE` event allows users to get an updated treatment when Split definitions are updated.
+Additionally, a usage of the `SDK_UPDATE` event allows users to get an updated treatment when Feature Flag definitions are updated.
 
 ````javascript
 import { LightningElement, api } from 'lwc';
@@ -194,4 +194,8 @@ var client = factory.client();
 Then, clicking Preview at the top left of the Developer Console will show the final result of the Split treatment. 
 
 ![image](https://user-images.githubusercontent.com/1207274/226907521-50223340-fb7c-4ccb-9a34-e03fdbf8a0a9.png)
+
+## Using in APEX
+
+Split itself does not have an APEX SDK. However you do have a way to get feature flags into APEX code. Using the capabilites of APEX to make [HTTP API Calls](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_callouts_http.htm) in concert with a [Split Evaluator](https://help.split.io/hc/en-us/articles/360020037072-Split-evaluator) will allow you to make HTTP requests and return the values of Split feature flags. 
 
